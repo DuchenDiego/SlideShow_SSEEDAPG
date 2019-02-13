@@ -1,0 +1,563 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSEE Ansiedad</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        
+
+		<style>
+		
+		.reveal section img { background:none; border:none; box-shadow:none; }
+
+        .reveal {overflow: hidden;}
+
+        .titulo {
+
+            color: rgb(219, 168, 86) !important;
+            text-align: right !important;
+            
+        }
+
+        .flecha{
+
+            height: 15%;
+            width: 15%;
+            padding-left: 50%;
+            margin-bottom: 100%;
+            
+        }
+
+        /** Estilos circle-progress-bar 1**/
+        
+        .pie {
+            text-indent: -9999rem;
+            width: 8rem;
+            height: 8rem;
+            border-radius: 100%;
+            margin: 3rem auto;
+            /*background: 
+                linear-gradient(-90deg, #2ecc71 50%, transparent 50%),
+                linear-gradient(180deg, #2c3e50 50%, #2ecc71 50%);*/
+            position: relative;
+            transition: all .5s ease-in-out;
+        }
+
+        .pie:after {
+            content: attr(data-percentage) '%';
+            width: 7.5rem;
+            height: 7.5rem;
+            border-radius: 100%;
+            background: #808080;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.875rem;
+            text-align: center;
+            font-weight: 600;
+            text-indent: 0;
+            line-height: 7.25rem;
+            color: #863E66
+        }
+
+        /********/
+
+        /** Estilos circleProgressBar 2**/
+
+        span#procent {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 50px;
+            transform: translate(-50%, -50%);
+            color: #863E66;
+        }
+
+        span#procent::after {
+            content: '%';
+        }
+
+        span#procent2 {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 50px;
+            transform: translate(-50%, -50%);
+            color: rgb(163, 129, 55);
+        }
+
+        span#procent2::after {
+            content: '%';
+        }
+
+        .canvas-wrap {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        /********/
+
+        /* .shaped{
+            -webkit-clip-path: polygon(50% 0, 86% 0, 86% 100%, 50% 100%);
+            clip-path: polygon(50% 0, 86% 0, 86% 100%, 50% 100%);
+        } */
+
+        /*.reveal .slides {
+        width: 65% !important;
+        height: 100% !important;
+        top: 0!important;
+        margin-top: 29% !important;
+        }*/ 
+
+        /*.reveal .slides>section {
+        min-height: 90% !important;
+        top:auto !important;
+        }
+
+        .reveal .slides>section>section {
+        min-height: 100% !important;
+        } */
+
+        
+
+		</style>
+
+    </head>
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides" >
+
+                <!-- <section>
+
+                    <div  style="max-width: 50%; text-align: left;">
+                        <img src="ansie1.jpeg" class="shaped" style="float: left">
+                        <img src="LogoU.png" style="width: 150px;height: 150px; margin-left: 50%"> 
+                    </div>
+
+                    <div style="max-width: 50%; text-align: right; position: absolute; margin-left: 60%;">
+                        <h2 style="">Themes</h2>
+                        <p>asdsadsad</p>
+                    </div>
+
+                    
+                    
+
+                </section> -->
+
+                <section data-background-size="contain" data-background-position="right" data-background="ansie1.png" data-background-opacity="1" >
+
+                    <div style=" max-width: 60%; text-align: left;  position: absolute; ">
+                
+                        <h3 style="color: rgb(219, 168, 86)">Sistema Experto para la detección oportuna de Síndrome Ansioso en estudiantes</h3>
+                        <h4 style="color: #863E66"> Caso de estudio: Universidad del Valle</h4>
+                        <h5>Brad Diego Duchen Ibañez</h5>
+                        <h6>2019</h6>
+                    </div>
+                
+                    <img src="LogoU.png" style="width: 120px;height: 120px; margin-left: 90%; margin-top: 50%"> 
+
+                </section>
+
+                <section>
+                    <h3 class="titulo">Introducción</h3>
+
+                    <div style=" margin-top: 15%; width: 100%; height: 30%; display: flex;">
+
+                            <p style="margin-top: 7%"><b>Personas</b></p>
+                            &nbsp;&nbsp;&nbsp;
+                            <img src="arrow1.png" class="flecha" alt="">
+                            &nbsp;&nbsp;&nbsp;
+                            <p style="margin-top: 7%"><b>Desafíos</b></p>
+                            &nbsp;&nbsp;&nbsp;
+                            <img src="arrow1.png" class="flecha" alt="">
+                            <p style="margin-top: 7%"><b>Metas</b></p>
+                            
+                    </div>
+
+                </section>
+
+                <section data-background-transition="slide">
+
+                    <section style="text-align: left" data-background="ansie2.jpeg"  data-background-transition="slide" data-background-opacity="0.7" data-background-size="contain" data-background-position="right">
+                        <h3 >Ansiedad</h3>
+                        <br>
+                        <ul style="width: 55%">
+                            <li class="fragment">Emoción</li>
+                            <li class="fragment">Afrontar desafíos</li>
+                            <li class="fragment">Señal de alerta ante un peligro</li>
+                            <li class="fragment">Síntomas psíquicos y somáticos</li>
+                        </ul>
+    
+                    </section>
+                    <section>
+                        <div style="display: flex">
+                            <img src="ansnormal.png" style="height: 20%; width: 20%">
+                            &nbsp;&nbsp;&nbsp;
+                            <p style="margin-top: 10%">Ansiedad <br> Estado Mental <b>Natural</b></p>
+                        </div>
+                        <div style="display: flex" class="fragment">
+                            <div>
+                                <p style="margin-top: 10%">Ansiedad Descontrolada </p>
+                                <ul>
+                                    <li> <p style="color:#E7AD52">Síndrome Ansioso</p> </li>
+                                    <li> <p style="color:firebrick">Trastorno Ansioso</p> </li>
+                                </ul>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;
+                            <img src="anspat.png" style="height: 20%; width: 20%; padding-left: 10%">
+                        </div>
+                    </section>
+                </section>
+
+                <section>
+                    <h3 class="titulo">Introducción</h3>
+                    
+                    <div style=" margin-top: 8%; width: 100%; height: 30%; display: flex;">
+
+                        <p style="margin-top: 3%"><b>Estudiantes</b></p>
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="arrow1.png" class="flecha" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <p style="margin-top: 3%"><b>Desafíos</b></p>
+                        &nbsp;&nbsp;&nbsp;
+                        <img src="arrow1.png" class="flecha" alt="">
+                        &nbsp;&nbsp;&nbsp;
+                        <p style="margin-top: 3%"><b>Profesionales</b></p>
+                            
+                    </div>
+                    <br>
+                    <div style="display:block; text-align: left" class="fragment">
+
+                        <p><b>Ansiedad Descontrolada Estudiantes</b></p>
+                        &nbsp;&nbsp;&nbsp;
+                        <ul>
+                            <li>Rendimiento académico afectado</li>
+                            <li>Abandono de materias/carrera</li>
+                            <li>Potencial caso de trastorno ansioso</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+
+                    <h3 class="titulo">Introducción</h3>
+
+                    <div style="display: flex; margin-top: 10%;">
+                    
+                        <p style="width: 30%"><b>Funciones del gabinete psicopedagógico</b></p>
+
+                        <ul style="margin-left: 20%">
+                            <li>Orientación</li>
+                            <li>Asistencia</li>
+                            <li>Seguimiento</li>
+                            <li>Prevención</li>
+                            <li style="list-style-type: none;">Síndromes/Trastornos</li>
+                        </ul>
+
+                    </div>
+
+                </section>
+                
+                <section style="text-align: left">
+
+                    <h3 class="titulo">Planteamiento del Problema</h3>
+                    <br>
+                    <p><b>Síndrome Ansioso</b></p>
+                    <br>
+
+                    <div style="display: block; text-align: center; margin-left: 20%">
+                        <div style="display: flex">
+                            <p>2015</p>
+                            <img src="arrow2.png" style="height: 7%; width: 7%; padding-left: 25%; padding-right: 10%" alt="">
+                            <p>52 casos</p>
+                            <br>
+                        </div>
+                        <div style="display: flex">
+                            <p>2016,2017</p>
+                            <img src="arrow2.png" style="height: 7%; width: 7%; padding-left: 15%; padding-right: 10%" alt="">
+                            <p>72 casos</p>
+                            <br>
+                        </div>
+                        <div style="display: flex">
+                            <p>2018 (Agosto)</p>
+                            <img src="arrow2.png" style="height: 7%; width: 7%; padding-left: 10%; padding-right: 10%" alt="">
+                            <p>60 casos</p>
+                        </div>
+                        
+
+                    </div>
+                </section>
+
+                <section>
+
+                    <section data-state="TriggerProgressBar1" data-background-transition="slide"> 
+    
+                        <h3 class="titulo">Planteamiento del Problema</h3>
+                        &nbsp;
+    
+                        <div style="display: flex; text-align: left">
+    
+                            <div>
+                               <p><b>Univalle subsede La Paz</b></p>
+                                <ul style="list-style-type: square;">
+                                    <li>4000 estudiantes gestión 2018</li>
+                                    <li>60 casos hasta Agosto</li>
+                                </ul>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <div>
+                                <!--Progress bar 1-->
+                                <div class="pie" data-percentage="1.5"></div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; text-align: center; padding-top: 2%">
+                            <div>
+                                <!--Progress bar 2-->
+                                <div class="canvas-wrap">
+                                    <canvas id="canvas" width="300" height="300"></canvas>
+                                    <span id="procent"></span>
+                                </div>
+                            </div>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <div>
+                                <p><b>Encuesta (Subescala ansiedad Goldberg)</b></p>
+                                <ul style="list-style-type: square;">
+                                    <li>114 Encuestados</li>
+                                    <li>73 casos con indicios de síndrome ansioso</li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </section>
+
+                    <section data-state="TriggerProgressBar2">
+
+                        <h3 class="titulo">Planteamiento del Problema</h3>
+                        &nbsp;
+
+                        <p><b>Centro de salud mental Santa Cruz</b></p>
+                        Ansiedad y depresión
+                        &nbsp;
+
+                        <div style="display: block; text-align: center">
+                                <!--Progress bar 3-->
+                                <div class="canvas-wrap" style="margin-left: 30%">
+                                    <canvas id="canvas2" width="300" height="300"></canvas>
+                                    <span id="procent2"></span>
+                                </div>
+                                <p style="margin-right: 5%">Población Boliviana</p>
+                        </div>
+
+                    </section>
+                </section>
+
+                <section>
+
+                    <h3 class="titulo">Formulación del Problema</h3>
+                    <br>
+                    <blockquote style="align-self: center; margin-left: 20%;">
+                        Los estudiantes de la Universidad Privada del Valle 
+                        Subsede La Paz presentan poca predisposición en 
+                        buscar apoyo del gabinete psicopedagógico para detectar
+                        síntomas de síndrome ansioso provocando que no se tenga
+                        información oportuna
+                    </blockquote>
+
+                </section>
+
+                <section>
+
+                    <h3 class="titulo">Objetivos</h3>
+                    <br>
+
+                    <p style="text-align: left"><b>Objetivo General</b></p>
+                    <br>
+                    <p>
+                        Desarrollar un sistema experto para la obtención de información
+                        de síntomas en estudiantes de la Universidad del Valle Subsede
+                        La Paz, que apoye en la detección oportuna de síndrome ansioso
+                    </p>
+                </section>
+
+                <section>
+
+                    <h3 class="titulo">Objetivos</h3>
+                    <br>
+                    <p style="text-align: left"><b>Objetivos Específicos</b></p>
+                    
+                    <ul>
+                        <li>Analizar los criterios considerados en la detección de síndrome ansioso</li>
+                        <li>Modelar el conocimiento aplicado en la detección de síndrome ansioso</li>
+                        <li>Desarrollar los componentes de la arquitectura del sistema experto</li>
+                        <li>Validar los resultados obtenidos con el prototipo del sistema experto</li>
+                    </ul>
+                </section>
+
+                <section>
+
+                    <h3 class="titulo">Justificación Técnica</h3>
+
+                    <div style="display: flex">
+
+                        <div>
+                            <div>
+                                <p style="text-align: left"><b>Personas con Síndrome Ansioso</b></p>
+                                <ul>
+                                    <li>Evasión de situaciones que desencadenen efectos ansiosos</li>
+                                    <li>Poca predisposición</li>
+                                </ul>
+                            </div>
+                            <img src="arrow2.png" style="width: 10%; height: 10%;padding: 0.3%; transform: rotate(90deg);margin-right: 30%" alt="">
+                            <p style="text-align: left"><b>Falta de información</b></p>
+                        
+                        </div>
+                        &nbsp;&nbsp;
+                        <div>
+    
+                            <p><b>Uso de Encuestas/Escalas</b></p>
+                            <ul>
+                                <li>Resultados temporales</li>
+                                <li>Carencia de información contextual</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+
+                    <h3 class="titulo">Justificación Social</h3>
+                    <br>
+
+                    <p><b>Apoyo a la detección de síndrome ansioso en estudiantes</b></p>
+                    <br>
+                    <p>Prevención de efectos negativos en</p>
+                    <ul>
+                        <li>Rendimiento Académico</li>
+                        <li>Interacción social en general</li>
+                    </ul>
+                </section>
+
+                <section style="text-align: left">
+
+                    <h3 class="titulo">Metodología y Tecnologías</h3>
+                    <br>
+
+                    <p><b>Metodología</b></p>
+                    <ul style="list-style-type: square;">
+                        <li>ICONIX</li>
+                        <li>Buchanan</li>
+                    </ul>
+
+                    <p><b>Tecnologías Utilizadas</b></p>
+                    <div style="display: flex;">
+                        <ul style="list-style-type: square;">
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>HTML5-CSS3-JS</li>
+                            <li>JQuery</li>
+                        </ul>
+                        &nbsp;&nbsp;&nbsp;
+                        <ul style="list-style-type: square;">
+                            <li>Vis.js</li>
+                            <li>DomPdf</li>
+                            <li>Enterprise Architect</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+                
+            </div>
+        </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+        /*Reveal*/
+
+        Reveal.initialize({
+            dependencies: [
+                // { src: 'plugin/markdown/marked.js' },
+                // { src: 'plugin/markdown/markdown.js' },
+                // { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/zoom-js/zoom.js', async: false }
+                // { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ],
+            controlsTutorial:true,
+            transition:"fade",
+            center: false,
+            zoomKey:'shift'
+        });
+
+        /* CircleProgressBar*/
+
+        function progressbr(canvasName,spanName,percent,color){
+            var can = document.getElementById(canvasName),
+            spanProcent = document.getElementById(spanName),
+            c = can.getContext('2d');
+            
+            var posX = can.width / 2,
+                posY = can.height / 2,
+                fps = 1000 / 200,
+                procent = 0,
+                oneProcent = 360 / 100,
+                result = oneProcent * percent;
+            
+            c.lineCap = 'round';
+            arcMove();
+            
+            function arcMove(){
+                var deegres = 0;
+                var acrInterval = setInterval (function() {
+                deegres += 1;
+                c.clearRect( 0, 0, can.width, can.height );
+                procent = deegres / oneProcent;
+
+                spanProcent.innerHTML = procent.toFixed();
+
+                c.beginPath();
+                c.arc( posX, posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + 360) );
+                c.strokeStyle = '#b1b1b1';
+                c.lineWidth = '10';
+                c.stroke();
+
+                c.beginPath();
+                c.strokeStyle = color;
+                c.lineWidth = '10';
+                c.arc( posX, posY, 70, (Math.PI/180) * 270, (Math.PI/180) * (270 + deegres) );
+                c.stroke();
+                if( deegres >= result ) clearInterval(acrInterval);
+                }, fps);
+                
+            }
+        }
+        
+        /*Triggers para progressbar de Slides*/
+
+        Reveal.addEventListener( 'TriggerProgressBar1', function() {
+            progressbr("canvas","procent",64,'#863E66');
+        }, false );
+
+        Reveal.addEventListener( 'TriggerProgressBar2', function() {
+            progressbr("canvas2","procent2",30,"rgb(163, 129, 55)");
+        }, false );
+
+
+    </script>
+	</body>
+</html>
