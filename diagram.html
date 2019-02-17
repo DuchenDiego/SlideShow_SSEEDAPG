@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="plugin/diagram/revealjs-diagram.css">
+</head>
+<body>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="plugin/diagram/revealjs-diagram.js"></script>
+  <script>
+
+    var treeData = {
+      name: 'Contexto',
+      x0: window.diagram.height / 2,
+      y0: 0,
+      children: []
+    };
+
+    var _transitions = [ llenadoSint,llenadoEle,añadirLinks,añadirResults,añadirSintTras,añadirTras];
+    var _inverse_transitions = [
+
+      elimSint,
+      elimEle,
+      window.diagram.removeItem("Resultado", treeData),
+      elimResults,
+      elimSintTras,
+      elimTras
+    ];
+
+    function llenadoSint(){// función llenado de los nodos hijo síntomas
+
+      for (let index = 1; index <= 19; index++) { 
+
+      window.diagram.addItem("Sint"+index,"Contexto", treeData)()
+      
+      }
+
+    }
+
+    function llenadoEle(){// función llenado de los nodos hijo elementos
+
+      window.diagram.addItem("Elem1","Sint1", treeData)()
+      for (let index = 2; index <= 4; index++) { 
+
+        window.diagram.addLink("Elem1","Sint"+index, treeData)()
+
+      }
+
+      window.diagram.addItem("Elem2","Sint5", treeData)()
+      for (let i = 6; i <=8; i++) {
+
+        window.diagram.addLink("Elem2","Sint"+i, treeData)()
+        
+      }
+
+      for (let j = 9; j <=19; j++) {
+        
+        window.diagram.addItem("Elem"+(j-6),"Sint"+j, treeData)()
+
+      }
+
+    }
+
+    function elimSint(){
+
+      for (let index = 1; index <= 19; index++) { //Llenado de los nodos hijo síntomas
+
+      window.diagram.removeItem("Sint"+index, treeData)()
+
+      }
+
+    }
+
+    function elimEle(){
+
+      for (let index = 1; index <= 13; index++) { //Llenado de los nodos hijo síntomas
+
+      window.diagram.removeItem("Elem"+index, treeData)()
+
+      }
+
+    }
+
+    function elimResults(){
+      window.diagram.removeItem("Ansiedad Sana", treeData)()
+      window.diagram.removeItem("Síndrome Ansioso", treeData)()
+      window.diagram.removeItem("Sin Ansiedad", treeData)()
+    }
+
+    function elimSintTras(){
+
+      for (let index = 1; index <= 4; index++) { //Llenado de los nodos hijo síntomas
+
+      window.diagram.removeItem("SintTras"+index, treeData)()
+
+      }
+    }
+
+    function elimTras(){
+      window.diagram.removeItem("TAG", treeData)()
+      window.diagram.removeItem("TOC", treeData)()
+      window.diagram.removeItem("TP", treeData)()
+      window.diagram.removeItem("TAS", treeData)()
+    }
+
+    function añadirTras(){
+
+      window.diagram.addItem("TAG","SintTras1", treeData)()
+      window.diagram.addItem("TOC","SintTras2", treeData)()
+      window.diagram.addItem("TP","SintTras3", treeData)()
+      window.diagram.addItem("TAS","SintTras4", treeData)()
+    }
+
+    function añadirLinks(){ //Función para unión de elementos a Result
+
+      window.diagram.addItem("Resultado","Elem9", treeData)()
+
+      for (let index = 1; index <= 8; index++) { 
+      window.diagram.addLink('Elem'+index, 'Resultado', treeData)()
+      }
+
+      for (let index = 10; index <= 13; index++) { 
+      window.diagram.addLink('Elem'+index, 'Resultado', treeData)()
+      }
+
+    }
+    
+    function añadirResults(){
+      window.diagram.addItem("Ansiedad Sana","Resultado", treeData)()
+      window.diagram.addItem("Síndrome Ansioso","Resultado", treeData)()
+      window.diagram.addItem("Sin Ansiedad","Resultado", treeData)()
+    }
+
+    function añadirSintTras(){
+      for (let index = 1; index <= 4; index++) { 
+      window.diagram.addItem('SintTras'+index, 'Síndrome Ansioso', treeData)()
+      }
+    }
+
+    // register the diagram
+    window.diagram.register('combined', function() {
+      window.diagram.init(treeData);
+    });
+  </script>
+</body>
