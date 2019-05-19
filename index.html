@@ -253,117 +253,91 @@
 
                 <section>
 
-                    <h3 class="titulo">Introducción</h3>
+                    <h3 class="titulo">Planteamiento del Problema</h3>
 
-                    <div style="display: flex; margin-top: 10%;">
+                    <div style="display: flex; margin-top: 5%;">
                     
-                        <p style="width: 30%"><b>Funciones del gabinete psicopedagógico</b></p>
+                        <div>
+                            <p style="width: 90%"><b>Funciones del gabinete psicopedagógico</b></p>
 
-                        <ul style="margin-left: 20%">
-                            <li>Orientación</li>
-                            <li>Asistencia</li>
-                            <li>Seguimiento</li>
-                            <li>Prevención</li>
-                            <li style="list-style-type: none;">Síndromes/Trastornos</li>
-                        </ul>
+                            <ul style="margin-right: 40%">
+                                <li>Orientación</li>
+                                <li>Asistencia</li>
+                                <li>Seguimiento</li>
+                                <li>Prevención</li>
+                                <li style="list-style-type: none;">Síndromes/Trastornos</li>
+                            </ul>
+                        </div>
 
+                        <div class="fragment"> 
+                            <p><b>Casos de Síndrome Ansioso</b></p>
+
+                            <div style="display: block; text-align: center; margin-top: 5%;">
+                                <div style="display: flex; margin-left: 10%">
+                                    <p>2015</p>
+                                    <img src="arrow2.png" style="height: 15%; width: 15%; padding-left: 25%; padding-right: 10%" alt="">
+                                    <p>52 casos</p>
+                                    <br>
+                                </div>
+                                <div style="display: flex; margin-left: 10%">
+                                    <p>2016,<br>2017</p>
+                                    <img src="arrow2.png" style="height: 15%; width: 15%; padding-left: 15%; padding-right: 10%" alt="">
+                                    <p>72 casos</p>
+                                    <br>
+                                </div>
+                                <div style="display: flex;">
+                                    <p>2018 (Agosto)</p>
+                                    <img src="arrow2.png" style="height: 15%; width: 15%; padding-left: 10%; padding-right: 10%" alt="">
+                                    <p>60 casos</p>
+                                </div>
+                            </div>    
+                        </div>
+                        
                     </div>
 
                 </section>
-                
-                <section style="text-align: left">
+
+                <section data-state="TriggerProgressBar1" data-background-transition="slide"> 
 
                     <h3 class="titulo">Planteamiento del Problema</h3>
-                    <br>
-                    <p><b>Síndrome Ansioso</b></p>
-                    <br>
+                    &nbsp;
 
-                    <div style="display: block; text-align: center; margin-left: 20%">
-                        <div style="display: flex">
-                            <p>2015</p>
-                            <img src="arrow2.png" style="height: 7%; width: 7%; padding-left: 25%; padding-right: 10%" alt="">
-                            <p>52 casos</p>
-                            <br>
+                    <div style="display: flex; text-align: left">
+
+                        <div>
+                            <p><b>Univalle subsede La Paz</b></p>
+                            <ul style="list-style-type: square;">
+                                <li>4000 estudiantes gestión 2018</li>
+                                <li>60 casos hasta Agosto</li>
+                            </ul>
                         </div>
-                        <div style="display: flex">
-                            <p>2016,2017</p>
-                            <img src="arrow2.png" style="height: 7%; width: 7%; padding-left: 15%; padding-right: 10%" alt="">
-                            <p>72 casos</p>
-                            <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <!--Progress bar 1-->
+                            <div class="pie" data-percentage="1.5"></div>
                         </div>
-                        <div style="display: flex">
-                            <p>2018 (Agosto)</p>
-                            <img src="arrow2.png" style="height: 7%; width: 7%; padding-left: 10%; padding-right: 10%" alt="">
-                            <p>60 casos</p>
+                    </div>
+                    
+                    <div style="display: flex; text-align: center; padding-top: 2%">
+                        <div>
+                            <!--Progress bar 2-->
+                            <div class="canvas-wrap">
+                                <canvas id="canvas" width="300" height="300"></canvas>
+                                <span id="procent"></span>
+                            </div>
                         </div>
-                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <div>
+                            <p><b>Encuesta (Subescala ansiedad Goldberg)</b></p>
+                            <ul style="list-style-type: square;">
+                                <li>114 Encuestados</li>
+                                <li>73 casos con indicios de síndrome ansioso</li>
+                            </ul>
+                        </div>
 
                     </div>
                 </section>
 
-                <section>
-
-                    <section data-state="TriggerProgressBar1" data-background-transition="slide"> 
-    
-                        <h3 class="titulo">Planteamiento del Problema</h3>
-                        &nbsp;
-    
-                        <div style="display: flex; text-align: left">
-    
-                            <div>
-                               <p><b>Univalle subsede La Paz</b></p>
-                                <ul style="list-style-type: square;">
-                                    <li>4000 estudiantes gestión 2018</li>
-                                    <li>60 casos hasta Agosto</li>
-                                </ul>
-                            </div>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <div>
-                                <!--Progress bar 1-->
-                                <div class="pie" data-percentage="1.5"></div>
-                            </div>
-                        </div>
-                        
-                        <div style="display: flex; text-align: center; padding-top: 2%">
-                            <div>
-                                <!--Progress bar 2-->
-                                <div class="canvas-wrap">
-                                    <canvas id="canvas" width="300" height="300"></canvas>
-                                    <span id="procent"></span>
-                                </div>
-                            </div>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <div>
-                                <p><b>Encuesta (Subescala ansiedad Goldberg)</b></p>
-                                <ul style="list-style-type: square;">
-                                    <li>114 Encuestados</li>
-                                    <li>73 casos con indicios de síndrome ansioso</li>
-                                </ul>
-                            </div>
-    
-                        </div>
-                    </section>
-
-                    <section data-state="TriggerProgressBar2">
-
-                        <h3 class="titulo">Planteamiento del Problema</h3>
-                        &nbsp;
-
-                        <p><b>Centro de salud mental Santa Cruz</b></p>
-                        Ansiedad y depresión
-                        &nbsp;
-
-                        <div style="display: block; text-align: center">
-                                <!--Progress bar 3-->
-                                <div class="canvas-wrap" style="margin-left: 30%">
-                                    <canvas id="canvas2" width="300" height="300"></canvas>
-                                    <span id="procent2"></span>
-                                </div>
-                                <p style="margin-right: 5%">Población Boliviana</p>
-                        </div>
-
-                    </section>
-                </section>
                 <section>
 
                     <h3 class="titulo">Formulación del Problema</h3>
@@ -402,81 +376,80 @@
                         <li>Analizar los criterios considerados en la detección de síndrome ansioso</li>
                         <li>Modelar el conocimiento aplicado en la detección de síndrome ansioso</li>
                         <li>Desarrollar los componentes de la arquitectura del sistema experto</li>
-                        <li>Validar los resultados obtenidos con el prototipo del sistema experto</li>
+                        <li>Validar los resultados obtenidos con el sistema experto</li>
                     </ul>
                 </section>
 
                 <section>
 
-                    <h3 class="titulo">Justificación Técnica</h3>
+                    <h3 class="titulo">Justificación</h3>
 
-                    <div style="display: flex">
+                    <!-- <div>
+                        <p style="text-align: left"><b>Teórica</b></p>
 
-                        <div>
-                            <div>
-                                <p style="text-align: left"><b>Personas con Síndrome Ansioso</b></p>
+                        <font size="6">
+                            <div style="display: flex; margin-left: 10%">
                                 <ul>
-                                    <li>Evasión de situaciones que desencadenen efectos ansiosos</li>
-                                    <li>Poca predisposición</li>
+                                    <li>Ingeniería de Software</li>
+                                    <li>Programación Avanzada</li>
+
+                                </ul>
+                                &nbsp;
+                                <ul>
+                                    <li>Inteligencia Artificial</li>
+                                    <li>Aseguramiento Calidad Software</li>
+                                </ul>
+                                &nbsp;
+                                <ul>
+                                    <li>Base de Datos</li>
                                 </ul>
                             </div>
-                            <img src="arrow2.png" style="width: 10%; height: 10%;padding: 0.3%; transform: rotate(90deg);margin-right: 30%" alt="">
-                            <p style="text-align: left"><b>Falta de información</b></p>
+                        </font>
                         
-                        </div>
-                        &nbsp;&nbsp;
-                        <div>
-    
-                            <p><b>Uso de Encuestas/Escalas</b></p>
+                    </div> -->
+
+                    <div>
+                        <p style="text-align: left"><b>Técnica</b></p>
+
+                        <div style="display: flex; margin-left: 5%">
+                            <p>Uso de Encuestas/Escalas</p>
+                            &nbsp;&nbsp;
                             <ul>
                                 <li>Resultados temporales</li>
                                 <li>Carencia de información contextual</li>
                             </ul>
                         </div>
+                        
                     </div>
+
+                    <div class="fragment">
+                        <p style="text-align: left"><b>Social</b></p>
+
+                        <div style="display: flex; margin-left: 5%">
+                            <p>Prevención de efectos negativos en</p>
+                            &nbsp;&nbsp;
+                            <ul>
+                                <li>Rendimiento Académico</li>
+                                <li>Interacción social en general</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+
+                    
+                </section>
+
+                <!--MARCO TEÓRICO-->
+                <!---->
+                <!---->
+
+                <section>
+                    <h3 class="titulo" style="text-align: center !important; margin-top: 25%">Marco Teórico</h3>
                 </section>
 
                 <section>
-
-                    <h3 class="titulo">Justificación Social</h3>
-                    <br>
-
-                    <p><b>Apoyo a la detección de síndrome ansioso en estudiantes</b></p>
-                    <br>
-                    <p>Prevención de efectos negativos en</p>
-                    <ul>
-                        <li>Rendimiento Académico</li>
-                        <li>Interacción social en general</li>
-                    </ul>
-                </section>
-
-                <section style="text-align: left">
-
-                    <h3 class="titulo">Metodología y Tecnologías</h3>
-                    <br>
-
-                    <p><b>Metodología</b></p>
-                    <ul style="list-style-type: square;">
-                        <li>ICONIX</li>
-                        <li>Buchanan</li>
-                    </ul>
-
-                    <p><b>Tecnologías Utilizadas</b></p>
-                    <div style="display: flex;">
-                        <ul style="list-style-type: square;">
-                            <li>PHP</li>
-                            <li>Laravel</li>
-                            <li>HTML5-CSS3-JS</li>
-                            <li>JQuery</li>
-                        </ul>
-                        &nbsp;&nbsp;&nbsp;
-                        <ul style="list-style-type: square;">
-                            <li>Vis.js</li>
-                            <li>DomPdf</li>
-                            <li>Enterprise Architect</li>
-                        </ul>
-                    </div>
-                    
+                    <h3 class="titulo">Marco Teórico</h3>
+                    <img src="Acropolis.png" style="width:80%;height:75%;">
                 </section>
                 
                 <!--INGENIERÍA DEL PROYECTO-->
@@ -485,6 +458,11 @@
 
                 <section>
                     <h3 class="titulo" style="text-align: center !important; margin-top: 25%">Ingeniería del Proyecto</h3>
+                </section>
+
+                <section>
+                    <h3 class="titulo">Fases Metodología Buchanan</h3>
+                    <img src="buchanan.png" style="width:80%;height:60%;margin-top: -2%">
                 </section>
 
                 <section>
@@ -521,7 +499,7 @@
                                 <td >
                                     Análisis de variables de conocimiento <br>
                                     Especificación de casos de uso <br>
-                                    Diagramas de robustez <br>
+                                     <br>
                                     Modelo de datos <br><br>
                                 </td>
                             </tr>
@@ -564,6 +542,10 @@
                 </section>
 
                 <section>
+                    <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">IDENTIFICACIÓN</h3>
+                </section>
+
+                <section>
                     <section>
                         <h3 class="titulo">Ingeniería del Proyecto</h3>
                         <br>
@@ -583,9 +565,13 @@
                 </section>
 
                 <section>
-                    <p><b>Diagrama de Casos de Uso del Sistema</b></p>
+                    <p style="margin-top: -3%"><b>Diagrama de Casos de Uso del Sistema</b></p>
 
-                    <img style="height: 70%; width: 50%"src="casosdeuso.png">
+                    <img style="height: 85%; width: 85%; margin-top:-14%"src="casosdeuso.png">
+                </section>
+
+                <section>
+                    <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">CONCEPTUALIZACIÓN</h3>
                 </section>
 
                 <section>
@@ -612,6 +598,15 @@
                             </ul>
                         </div>
                     </div>
+                </section>
+
+                <section>
+                    <p style="margin-top: -3%"><b>Modelo de Datos</b></p>
+                    <img src="datos.png" style="height: 80%; width: 80%; margin-top: -3%">
+                </section>
+
+                <section>
+                    <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">FORMALIZACIÓN</h3>
                 </section>
 
                 <!--Espacio de Estados con libreria D3-->
@@ -655,7 +650,7 @@
                     </font>
                 </section>
 
-                <section>
+                <!-- <section>
                     <h3 class="titulo">Ingeniería del Proyecto</h3>
                     <p style="text-align: left"><b >Demo del Sistema</b></p>
                     <br>
@@ -708,9 +703,235 @@
                             <li>>=15 Síndrome Ansioso</li>
                         </ul>
                     </font>
+                </section> -->
+
+                <section>
+                    <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">IMPLEMENTACIÓN</h3>
                 </section>
 
                 <section>
+                    <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">VALIDACIÓN</h3>
+                </section>
+                
+                <section>
+                    <h4 class="titulo" style="color: #ffffff !important; text-align: center !important; margin-top: 25%">Matriz de Trazabilidad</h4>
+                </section>
+                
+                <section>
+                    <!-- <h3 class="titulo">Conclusiones</h3>
+                    <p style="text-align: left; margin-top: -9%"><b>Matriz de Trazabilidad</b></p> -->
+                    <font size="1">
+                        <table class="tableizer-table" style="width:100%; margin-top: -3%">
+                            <tbody>
+                            <tr class="tableizer-firstrow">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: medium;"><strong>Requerimientos Funcionales</strong></span></span></p>
+                            </td>
+                            <td colspan="4" width="80%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: medium;"><strong>Diagramas ICONIX</strong></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify">&nbsp;</p>
+                            </td>
+                            <td width="13%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Modelo de Dominio</span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Casos de Uso </span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Robustez</span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Secuencia</span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Log In Sistema</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(Login)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,3.3. <em> </em>(<em>Autenticaci&oacute;n de Usuarios</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5,1, <em>(</em><em>Autenticaci&oacute;n de Usuarios</em><em>)</em></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%" height="20">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Gesti&oacute;n de criterios para Detecci&oacute;n</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(Administrar Criterios de Detecci&oacute;n)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,3.3. <em> </em>(<em>Registro de Criterios de Detecci&oacute;n de Ansiedad</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5,1, <em>(Detecci&oacute;n de Ansiedad)</em></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Detecci&oacute;n de S&iacute;ndrome Ansioso</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(Generar Detecci&oacute;n de posible Ansiedad)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,3.3. <em> </em>(<em>Detecci&oacute;n de Ansiedad</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5,1, <em>(Detecci&oacute;n de Ansiedad)</em></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Presentaci&oacute;n de resultados</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(Generar Detecci&oacute;n de posible Ansiedad)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;"><em>3,</em><em>3.3.</em> <em> (Detecci&oacute;n de Ansiedad</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5.1. <em>(Detecci&oacute;n de Ansiedad)</em></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Gesti&oacute;n de reglas</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(</em><em>Administrar Reglas</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;"><em>3,</em><em>3.3.</em> <em> (Detecci&oacute;n de Ansiedad</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5,1, <em>(Detecci&oacute;n de Ansiedad)</em></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Consulta de datos de estudiantes</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(</em><em>Consultar Detalles de Detecciones</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,3.3. <em> </em>(<em>Consulta de Datos y Generaci&oacute;n de Reportes</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5,1, <em>(Consulta de informaci&oacute;n oportuna)</em></span></span></p>
+                            </td>
+                            </tr>
+                            <tr valign="top">
+                            <td width="20%">
+                            <p align="justify"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">Generar reportes de estudiantes</span></span></p>
+                            </td>
+                            <td width="13%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.2.3. <em>MODELO DE DOMINIO</em> </span></span></p>
+                            </td>
+                            <td width="32%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,2,4, <em>(</em><em>Generar Reporte Detalles de Detecciones</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="15%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3,3.3. <em> </em>(<em>Consulta de Datos y Generaci&oacute;n de Reportes</em><em>)</em></span></span></p>
+                            </td>
+                            <td width="20%">
+                            <p align="center"><span style="padding:0; margin:0; font-family: Arial, sans-serif;"><span style="padding:0; margin:0; font-size: small;">3.5,1, <em>(Consulta de informaci&oacute;n oportuna)</em></span></span></p>
+                            </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </font>
+                </section>
+                <section>
+                    <h3 class="titulo">Conclusiones</h3>
+                    <p style="margin-top: -4%; text-align: left;"><b>Objetivo General</b></p>
+                    <font size="5">
+                        <p style="margin-left: 5%">
+                            Desarrollar un sistema experto para la obtención de información
+                            de síntomas en estudiantes de Univalle, que apoye en la detección oportuna de síndrome ansioso
+                        </p>
+                    </font>
+                    <img src="res1.png" style="border-radius: 5%;">
+                </section>
+                <section>
+                    <h3 class="titulo">Conclusiones</h3>
+                    <p style="margin-top: -4%; text-align: left;"><b>Objetivo General</b></p>
+                    <font size="5">
+                        <p style="margin-left: 5%">
+                            Desarrollar un sistema experto para la obtención de información
+                            de síntomas en estudiantes de Univalle, que apoye en la detección oportuna de síndrome ansioso
+                        </p>
+                    </font>
+                    <div style="display: flex">
+                        <div style="width:30%">
+                            <img src="arrow1.png"">
+                        </div>
+                        <div style="width:70%">
+                            <img src="res2.png">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="titulo">Conclusiones</h3>
+                    <p style="margin-top: -4%; text-align: left;"><b>Objetivos Específicos</b></p>
+                    <font size="5">
+                        <p style="margin-left: 5%">
+                            Analizar los criterios considerados y Modelar el
+                            conocimiento aplicado en la detección de síndrome
+                            ansioso
+                        </p>
+                    </font>
+                    <div style="display: flex">
+                        <div style="width:30%">
+                            <img src="arrow1.png"">
+                        </div>
+                        <div style="width:70%">
+                            <img src="estados.png" style="height: 80%"> 
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3 class="titulo">Conclusiones</h3>
+                    <p style="margin-top: -4%; text-align: left;"><b>Objetivos Específicos</b></p>
+                    <font size="5">
+                        <p style="margin-left: 5%">
+                            Desarrollar los componentes y validar los resultados obtenidos con el sistema experto
+                        </p>
+                    </font>
+                    <img src="res3.jpg" >
+                </section>
+
+
+                <!-- <section>
                     <h3 class="titulo">Conclusiones</h3>
                     <br>
                     <font size="6" style="text-align: left">
@@ -724,7 +945,7 @@
                         
                         <p class="fragment">Validación de resultados con prototipo(Pruebas)</p>
                     </font>
-                </section>
+                </section> -->
             </div>
         </div>
 

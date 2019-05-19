@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
-  <link rel="stylesheet" href="plugin/diagram/revealjs-diagram.css">
+  <!-- <link rel="stylesheet" href="plugin/diagram/revealjs-diagram.css"> -->
+  <style title="revealjs-diagram">
+    .node {
+      cursor: pointer; }
+
+    .node rect {
+      fill: #333333;
+      stroke: #f6a821;
+      stroke-width: 2.5px; }
+
+    .node text {
+      font: 10px sans-serif;
+      fill: #fff; }
+
+    .link, .link-alone {
+      fill: none;
+      stroke: #f6a821;
+      stroke-width: 1.5px; }
+  </style>
 </head>
 <body>
   <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -26,8 +44,10 @@
       elimSintTras,
       elimTras
     ];
+    var estilo = getStyleSheet();
 
     function llenadoSint(){// función llenado de los nodos hijo síntomas
+
 
       for (let index = 1; index <= 19; index++) { 
 
@@ -38,6 +58,8 @@
     }
 
     function llenadoEle(){// función llenado de los nodos hijo elementos
+
+     
 
       window.diagram.addItem("Elem1","Sint1", treeData)()
       for (let index = 2; index <= 4; index++) { 
@@ -59,15 +81,20 @@
 
       }
 
+      estilo.insertRule(".link, .link-alone {stroke: #000baf !important}", 4);
+
     }
 
     function elimSint(){
+      
 
       for (let index = 1; index <= 19; index++) { //Llenado de los nodos hijo síntomas
 
       window.diagram.removeItem("Sint"+index, treeData)()
 
       }
+
+     
 
     }
 
@@ -79,12 +106,15 @@
 
       }
 
+     
+
     }
 
     function elimResults(){
       window.diagram.removeItem("Ansiedad Sana", treeData)()
       window.diagram.removeItem("Síndrome Ansioso", treeData)()
       window.diagram.removeItem("Sin Ansiedad", treeData)()
+     
     }
 
     function elimSintTras(){
@@ -94,6 +124,8 @@
       window.diagram.removeItem("SintTras"+index, treeData)()
 
       }
+
+     
     }
 
     function elimTras(){
@@ -101,17 +133,21 @@
       window.diagram.removeItem("TOC", treeData)()
       window.diagram.removeItem("TP", treeData)()
       window.diagram.removeItem("TAS", treeData)()
+     
     }
 
     function añadirTras(){
-
+      estilo.deleteRule(4);
       window.diagram.addItem("TAG","SintTras1", treeData)()
       window.diagram.addItem("TOC","SintTras2", treeData)()
       window.diagram.addItem("TP","SintTras3", treeData)()
       window.diagram.addItem("TAS","SintTras4", treeData)()
+      estilo.insertRule(".link, .link-alone {stroke: #bf1010 !important}", 4);
     }
 
     function añadirLinks(){ //Función para unión de elementos a Result
+
+     estilo.deleteRule(4);
 
       window.diagram.addItem("Resultado","Elem9", treeData)()
 
@@ -123,17 +159,33 @@
       window.diagram.addLink('Elem'+index, 'Resultado', treeData)()
       }
 
+      estilo.insertRule(".link, .link-alone {stroke: #18a543 !important}", 4);
+
     }
     
     function añadirResults(){
+      estilo.deleteRule(4);
       window.diagram.addItem("Ansiedad Sana","Resultado", treeData)()
       window.diagram.addItem("Síndrome Ansioso","Resultado", treeData)()
       window.diagram.addItem("Sin Ansiedad","Resultado", treeData)()
+      estilo.insertRule(".link, .link-alone {stroke: #741a9e !important}", 4);
     }
 
     function añadirSintTras(){
+      estilo.deleteRule(4);
       for (let index = 1; index <= 4; index++) { 
       window.diagram.addItem('SintTras'+index, 'Síndrome Ansioso', treeData)()
+      }
+      estilo.insertRule(".link, .link-alone {stroke: #bf5f11 !important}", 4);
+    }
+
+    //funcion para seleccionar los estilos de la page
+    function getStyleSheet() {
+      for(var i=0; i<document.styleSheets.length; i++) {
+        var sheet = document.styleSheets[i];
+        if(sheet.title == 'revealjs-diagram') {
+          return sheet;
+        }
       }
     }
 
