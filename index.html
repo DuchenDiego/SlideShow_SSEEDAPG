@@ -106,6 +106,26 @@
             height: 300px;
         }
 
+        /** Numbers **/
+
+        .numberCircle {
+            font: Arial, sans-serif;
+            font-size: 70px ;
+            width: 2em;
+            height: 2em;
+            box-sizing: initial;
+
+            background: #863E66;
+            border: 0.1em solid #fff;
+            color: #000;
+            text-align: center;
+            border-radius: 50%;    
+
+            line-height: 2em;
+            box-sizing: content-box;   
+        }
+
+
         /********/
 
         /* .shaped{
@@ -523,8 +543,6 @@
                                     Diagramas de secuencia <br>
                                     Desarrollo de sistema experto <br>
                                     Desarrollo de sistema de información <br>
-                                    Matriz de trazabilidad <br>
-                                    Plan de pruebas <br><br>
                                 </td>
                             </tr>
                             <tr valign="top">
@@ -543,11 +561,22 @@
 
                 <section>
                     <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">IDENTIFICACIÓN</h3>
+                    <center>
+                        <div class="numberCircle">1</div>
+                    </center>
                 </section>
 
                 <section>
                     <section>
-                        <h3 class="titulo">Ingeniería del Proyecto</h3>
+                        <div style="display: flex;">
+                            <div style="width: 30%">
+                                <div class="numberCircle">1</div>
+                            </div>
+                            <div style="width: 70%">
+                                <h3 class="titulo">Ingeniería del Proyecto</h3>
+                            </div>
+                        </div>
+                        
                         <br>
     
                         <p><b>Identificación de Dominio de Conocimiento</b></p>
@@ -566,16 +595,26 @@
 
                 <section>
                     <p style="margin-top: -3%"><b>Diagrama de Casos de Uso del Sistema</b></p>
-
+                    
                     <img style="height: 85%; width: 85%; margin-top:-14%"src="casosdeuso.png">
                 </section>
 
                 <section>
                     <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">CONCEPTUALIZACIÓN</h3>
+                    <center>
+                        <div class="numberCircle">2</div>
+                    </center>
                 </section>
 
                 <section>
-                    <h3 class="titulo">Ingeniería del Proyecto</h3>
+                    <div style="display: flex;">
+                        <div style="width: 30%">
+                            <div class="numberCircle">2</div>
+                        </div>
+                        <div style="width: 70%">
+                            <h3 class="titulo">Ingeniería del Proyecto</h3>
+                        </div>
+                    </div>
                     <br>    
 
                     <p><b>Conceptualización del Conocimiento</b></p>
@@ -607,6 +646,9 @@
 
                 <section>
                     <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">FORMALIZACIÓN</h3>
+                    <center>
+                        <div class="numberCircle">3</div>
+                    </center>
                 </section>
 
                 <!--Espacio de Estados con libreria D3-->
@@ -621,7 +663,15 @@
                 <!--Matriz de Devaluacion de pesos generada con tableizer-->
                 <section >
 
-                    <p><b>Matriz devaluación de pesos</b></p><br>
+                    <div style="display: flex;">
+                        <div style="width: 20%">
+                            <div class="numberCircle">3</div>
+                        </div>
+                        <div style="width: 80%">
+                            <p><b>Matriz devaluación de pesos</b></p>
+                        </div>
+                    </div>
+                    <br>
 
                     <font size="1">
                         <table class="tableizer-table">
@@ -707,10 +757,16 @@
 
                 <section>
                     <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">IMPLEMENTACIÓN</h3>
+                    <center>
+                        <div class="numberCircle">4</div>
+                    </center>
                 </section>
 
                 <section>
                     <h3 class="titulo" style="color: #863E66 !important; text-align: center !important; margin-top: 25%">VALIDACIÓN</h3>
+                    <center>
+                        <div class="numberCircle">5</div>
+                    </center>
                 </section>
                 
                 <section>
@@ -961,7 +1017,8 @@
                 // { src: 'plugin/markdown/marked.js' },
                 // { src: 'plugin/markdown/markdown.js' },
                 // { src: 'plugin/notes/notes.js', async: true },
-                { src: 'https://d3js.org/d3.v4.min.js' },
+                // { src: 'https://d3js.org/d3.v4.min.js' },
+                { src: 'node_modules/d3js.org/d3.v4.min.js' },
                 { src: 'node_modules/reveal.js-d3js/d3js.js'},
                 { src: 'plugin/zoom-js/zoom.js', async: false }
                 
